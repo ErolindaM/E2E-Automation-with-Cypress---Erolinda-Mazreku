@@ -1,0 +1,20 @@
+{
+  "name": "cypress-e2e-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "test:critical": "npx cypress run --spec 'cypress/e2e/register.cy.js'",
+    "test:general": "npx cypress run --spec 'cypress/e2e/home-page.cy.js' && npx cypress run --spec 'cypress/e2e/admin-page.cy.js' && npx cypress run --spec 'cypress/e2e/services.cy.js'" 
+  },
+
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.8.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1"
+  }
+}
